@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Travel Website">
+    <meta name="author" content=" Thamires Campos">
+    <meta name="keywords" content="Website, HTML, Travel">
+    <meta name="robots" content="index,follow">
+    <link rel="shortcut icon" href="../img/icons8-plane-16.png" type="image/x-icon">
+    <title>Travel Landing Page</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <section class="showcase">
+        <header>
+            <h2 class="logo">Travel</h2>
+            <div class="toggle"></div>
+        </header>
+
+       <video src="../img/Pexels Videos 1826896.mp4" muted loop autoplay></video>
+
+        <div class="overlay"></div>
+
+        <div class="text">
+            <h2>Never Stop</h2>
+            <h3>Exploring The World</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi eaque aliquam suscipit illum eum impedit, possimus maxime a nostrum non?</p>    
+            <a href="#">Explore</a>
+        </div>   
+
+        <ul class="social">
+            <li><a href="#"><img src="../img/facebook-removebg-preview.png" width="45" height="45" alt="Ícone do facebook"></a></li>
+            <li><a href="#"><img src="../img/twitter-removebg-preview.png" width="45" height="45" alt="Ícone do instagram"></a></li>
+            <li><a href="#"><img src="../img/instagram-removebg-preview.png" width="70" height="45" alt="Ícone do twitter"></a></li>
+        </ul>
+
+    </section>
+
+    <div class="menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Destination</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
+    <script>
+        const menuToggle = document.querySelector('.toggle')
+        const showcase = document.querySelector('.showcase')
+
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active')
+            showcase.classList.toggle('active')
+        })
+    </script>
+</body>
+</html>
